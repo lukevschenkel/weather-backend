@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+redis = "*"
+celery = "*"
+pydantic = "*"
+requests = "*"
+django-cors-headers = "*"
+python-dotenv = "*"
+openai = "*"
+
+[dev-packages]
+black = "*"
+flake8 = "*"
+mypy = "*"
+bandit = "*"
+types-requests = "*"
+
+[requires]
+python_version = "3.12"

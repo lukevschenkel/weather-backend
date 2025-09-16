@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Exit immediately if a command fails
+set -e
+
+echo "=== Running Black (format check) ==="
+black --check --diff app
+
+echo "=== Running Flake8 (linting) ==="
+flake8 app
+
+echo "=== Running Mypy (type checking) ==="
+mypy app
+
+echo "=== Running Bandit (security check) ==="
+bandit --recursive app
+
+echo "=== All checks passed! ==="
+    
