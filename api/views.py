@@ -13,6 +13,7 @@ from .portal_providers.factory import PortalProviderFactory
 from .models import Message
 from .tasks import push_message_to_portal
 
+
 class HelloAPIView(APIView):
 
     def get(self, _: Request) -> Response:
